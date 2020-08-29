@@ -1,6 +1,6 @@
 import DB from "./data/DB.json";
 
-class Vaani {
+export default class Vaani {
   public path: string = ""; //for WebBrowser convenience
   public peyar: string = "MLTYWNEIQOGDHVXBPSളവ";
   public speyar: string = "CAJ"; //C is special permit without 15
@@ -16,8 +16,8 @@ class Vaani {
   private vauyir: any;
   private yauyir: any;
   private auyir: any;
-  private userOword: string[];
-  private usergword: string[];
+  private userOword: Array<string>;
+  private usergword: Array<string>;
   //To cache the words and suggestion till the software closed
   private cacheword: Array<string> = new Array<string>(); //HashSet is not used since cachesug has duplicate
   private cachesug: Array<string> = new Array<string>();
